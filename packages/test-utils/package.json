@@ -15,6 +15,7 @@
   "types": "types/index.d.ts",
   "files": [
     "dist/*.js",
+    "dist/*.mjs",
     "types/index.d.ts"
   ],
   "scripts": {
