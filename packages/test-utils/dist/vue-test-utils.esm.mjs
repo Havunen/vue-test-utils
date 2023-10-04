@@ -1,13 +1,11 @@
-'use strict';
-
-var Vue = require('vue');
-var vueTemplateCompiler = require('vue-template-compiler');
+import Vue from 'vue';
+import { compileToFunctions } from 'vue-template-compiler';
 
 // 
 
 
 function createVNodes(vm, slotValue, name) {
-  const el = vueTemplateCompiler.compileToFunctions(
+  const el = compileToFunctions(
     `<div><template slot=${name}>${slotValue}</template></div>`
   );
   const _staticRenderFns = vm._renderProxy.$options.staticRenderFns;
@@ -3447,7 +3445,7 @@ const isReservedTag = (tag) => isHTMLTag(tag) || isSVG(tag);
 
 function compileTemplate(component) {
   if (component.template) {
-    if (!vueTemplateCompiler.compileToFunctions) {
+    if (!compileToFunctions) {
       throwError(
         `vueTemplateCompiler is undefined, you must pass ` +
           `precompiled components if vue-template-compiler is ` +
@@ -3466,7 +3464,7 @@ function compileTemplate(component) {
     }
 
     Object.assign(component, {
-      ...vueTemplateCompiler.compileToFunctions(component.template),
+      ...compileToFunctions(component.template),
       name: component.name
     });
   }
@@ -3627,7 +3625,7 @@ function createScopedSlots(
     const renderFn =
       typeof slot === 'function'
         ? slot
-        : vueTemplateCompiler.compileToFunctions(scopedSlotMatches.slot, { warn: customWarn })
+        : compileToFunctions(scopedSlotMatches.slot, { warn: customWarn })
             .render;
 
     const slotScope = scopedSlotMatches.match && scopedSlotMatches.match[1];
@@ -15895,7 +15893,7 @@ function isValidSlot(slot) {
 }
 
 function requiresTemplateCompiler(slot) {
-  if (typeof slot === 'string' && !vueTemplateCompiler.compileToFunctions) {
+  if (typeof slot === 'string' && !compileToFunctions) {
     throwError(
       `vueTemplateCompiler is undefined, you must pass ` +
         `precompiled components if vue-template-compiler is ` +
@@ -16090,15 +16088,4 @@ function shallow(component, options) {
   return shallowMount(component, options)
 }
 
-exports.ErrorWrapper = ErrorWrapper;
-exports.RouterLinkStub = RouterLinkStub;
-exports.Wrapper = Wrapper;
-exports.WrapperArray = WrapperArray;
-exports.config = config;
-exports.createLocalVue = createLocalVue;
-exports.createWrapper = createWrapper;
-exports.enableAutoDestroy = enableAutoDestroy;
-exports.mount = mount;
-exports.resetAutoDestroyState = resetAutoDestroyState;
-exports.shallow = shallow;
-exports.shallowMount = shallowMount;
+export { ErrorWrapper, RouterLinkStub, Wrapper, WrapperArray, config, createLocalVue, createWrapper, enableAutoDestroy, mount, resetAutoDestroyState, shallow, shallowMount };

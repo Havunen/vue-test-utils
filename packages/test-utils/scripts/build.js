@@ -1,13 +1,13 @@
-const rollup = require('rollup').rollup
-const flow = require('rollup-plugin-flow-no-whitespace')
-const resolve = require('path').resolve
-const buble = require('@rollup/plugin-buble')
-const nodeResolve = require('@rollup/plugin-node-resolve').nodeResolve
-const commonjs = require('@rollup/plugin-commonjs')
-const chalk = require('chalk')
-const json = require('@rollup/plugin-json')
-const replace = require('@rollup/plugin-replace')
-const del = require('rollup-plugin-delete')
+import {rollup} from 'rollup';
+import flow from 'rollup-plugin-flow-no-whitespace';
+import {resolve} from 'path';
+import buble from '@rollup/plugin-buble';
+import {nodeResolve} from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import chalk from 'chalk';
+import json from '@rollup/plugin-json';
+import replace from '@rollup/plugin-replace';
+import del from 'rollup-plugin-delete';
 
 function success(text) {
   console.log(chalk.green(`${text} ✔`))
@@ -32,7 +32,7 @@ const rollupOptionsBuild = [
     }
   },
   {
-    file: 'dist/vue-test-utils.esm.js',
+    file: 'dist/vue-test-utils.esm.mjs',
     format: 'esm',
     name: 'VueTestUtils',
     globals: {
@@ -74,9 +74,9 @@ rollupOptions.forEach(options => {
       }),
       flow(),
       json(),
-      buble({
-        objectAssign: 'Object.assign'
-      }),
+      // buble({
+      //   objectAssign: 'Object.assign'
+      // }),
       nodeResolve(),
       commonjs()
     ]

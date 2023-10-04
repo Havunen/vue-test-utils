@@ -1,5 +1,5 @@
 import { createLocalVue, mount } from 'packages/test-utils/src'
-import VeeValidate from 'vee-validate'
+import VeeValidate from 'havunen-vee-validate'
 import { describeWithShallowAndMount } from '~resources/utils'
 
 describeWithShallowAndMount('external libraries', () => {
