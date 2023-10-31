@@ -10,7 +10,7 @@ Voyons un exemple :
 
 ```js
 // Importation de la méthode `mount()` de Vue Test Utils
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 // Le composant à tester
 const MessageComponent = {

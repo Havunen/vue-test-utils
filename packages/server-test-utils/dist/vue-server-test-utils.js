@@ -3,7 +3,7 @@
 var Vue = require('vue');
 var vueTemplateCompiler = require('vue-template-compiler');
 var vueServerRenderer = require('vue-server-renderer');
-var testUtils = require('@vue/test-utils');
+var testUtils = require('vue2-test-utils');
 var cheerio = require('cheerio');
 
 function _interopNamespaceDefault(e) {
@@ -8889,6 +8889,26 @@ const w3cKeys = {
 Object.entries(modifiers).reduce(
   (acc, [key, value]) => Object.assign(acc, { [value]: w3cKeys[key] }),
   {}
+);
+
+// 
+
+
+/**
+ * Avoids firing events on specific disabled elements
+ * See more: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled
+ */
+
+new Set(
+  'BUTTON',
+  'COMMAND',
+  'FIELDSET',
+  'KEYGEN',
+  'OPTGROUP',
+  'OPTION',
+  'SELECT',
+  'TEXTAREA',
+  'INPUT'
 );
 
 /**

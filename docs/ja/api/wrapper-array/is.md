@@ -25,7 +25,7 @@ findComponent で使用する場合は、 `findComponent(Comp).element` で DOM 
 - **例:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)

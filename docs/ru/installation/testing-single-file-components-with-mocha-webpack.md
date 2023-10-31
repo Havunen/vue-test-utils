@@ -13,7 +13,7 @@
 Первое, что нужно сделать, это установить тестовые зависимости:
 
 ```bash
-npm install --save-dev @vue/test-utils mocha mochapack
+npm install --save-dev vue2-test-utils mocha mochapack
 ```
 
 Затем мы должны указать скрипт test в нашем `package.json`.
@@ -150,7 +150,7 @@ global.expect = require('expect')
 И создайте файл теста, названный `test/Counter.spec.js` со следующим кодом:
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Counter from '../src/Counter.vue'
 
 describe('Counter.vue', () => {

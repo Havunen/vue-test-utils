@@ -15,7 +15,7 @@ predicate 関数が true を返す `Wrapper` インスタンスを含む新し�
 - **例:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = shallowMount(Foo)

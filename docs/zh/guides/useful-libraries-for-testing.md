@@ -1,6 +1,6 @@
 ## 实用的测试库
 
-Vue Test Utils 提供了测试 Vue 组件的实用方法。同时我们的社区也有一些额外的库为 `@vue/test-utils` 拓展了更多实用的方法，或提供测试 Vue 应用中其它内容的工具。
+Vue Test Utils 提供了测试 Vue 组件的实用方法。同时我们的社区也有一些额外的库为 `vue2-test-utils` 拓展了更多实用的方法，或提供测试 Vue 应用中其它内容的工具。
 
 ### `vuex-mock-store`
 

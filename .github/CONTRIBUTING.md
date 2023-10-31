@@ -71,7 +71,7 @@ The default test script will do the following: lint with ESLint -> type check wi
 
 - **`packages`**: contains the `test-utils` and `server-test-utils` public packages. Also contains private packages `shared` and `create-instance` wich are used by `test-utils` and `server-test-utils`. The codebase is written in ES2015 with [Flow](https://flowtype.org/) type annotations.
 
-  - **`test-utils`**: the @vue/test-utils package.
+  - **`test-utils`**: the vue2-test-utils package.
 
     - **`dist`**: contains built files for distribution. Note this directory is only updated when a release happens; they do not reflect the latest changes in development branches.
 

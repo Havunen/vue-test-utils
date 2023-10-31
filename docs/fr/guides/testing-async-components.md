@@ -87,7 +87,7 @@ Le composant ci-dessus effectue un appel API lorsqu'un bouton est cliqué, puis 
 Un test peut être rédigé de cette manière :
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo'
 jest.mock('axios', () => ({
   get: Promise.resolve('value')
@@ -120,7 +120,7 @@ Une autre solution consiste à utiliser une fonction `async` et un paquet comme 
 Le test actualisé ressemble à ceci :
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import flushPromises from 'flush-promises'
 import Foo from './Foo'
 jest.mock('axios')

@@ -18,7 +18,7 @@ Creates a [`Wrapper`](wrapper/) that contains the mounted and rendered Vue compo
 **Without options:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -32,7 +32,7 @@ describe('Foo', () => {
 **With Vue options:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -50,7 +50,7 @@ describe('Foo', () => {
 **Attach to DOM:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -69,7 +69,7 @@ describe('Foo', () => {
 **Default and named slots:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 import FooBar from './FooBar.vue'
@@ -91,7 +91,7 @@ describe('Foo', () => {
 **Stubbing global properties:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -110,7 +110,7 @@ describe('Foo', () => {
 **Stubbing components:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 import Faz from './Faz.vue'

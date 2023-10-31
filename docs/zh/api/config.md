@@ -14,7 +14,7 @@ Vue Test Utils 包含了一个定义其选项的配置对象。
 示例：
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.showDeprecationWarnings = false
 ```
@@ -32,7 +32,7 @@ config.showDeprecationWarnings = false
 示例：
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.stubs['my-component'] = '<div />'
 ```
@@ -47,7 +47,7 @@ config.stubs['my-component'] = '<div />'
 示例：
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.mocks['$store'] = {
   state: {
@@ -66,7 +66,7 @@ config.mocks['$store'] = {
 示例：
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.methods['getData'] = () => {}
 ```
@@ -81,7 +81,7 @@ config.methods['getData'] = () => {}
 示例：
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.provide['$logger'] = {
   log: (...args) => {

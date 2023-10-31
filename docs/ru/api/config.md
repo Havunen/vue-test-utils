@@ -17,7 +17,7 @@ Vue Test Utils включает объект конфигурации для о�
 Пример:
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.stubs['my-component'] = '<div />'
 ```
@@ -32,7 +32,7 @@ config.stubs['my-component'] = '<div />'
 Пример:
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.mocks['$store'] = {
   state: {
@@ -51,7 +51,7 @@ config.mocks['$store'] = {
 Пример:
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.methods['getData'] = () => {}
 ```
@@ -66,7 +66,7 @@ config.methods['getData'] = () => {}
 Пример:
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.provide['$logger'] = {
   log: (...args) => {

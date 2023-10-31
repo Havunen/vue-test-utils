@@ -21,7 +21,7 @@
 `vue-test-utils` позволяет вам монтировать компонент без рендеринга его дочерних компонентов (заменяя их заглушками) с помощью метода `shallowMount`:
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 
 const wrapper = shallowMount(Component)
 wrapper.vm // примонтированный экземпляр Vue
@@ -95,7 +95,7 @@ expect(wrapper.emitted().foo[1]).toEqual([123])
 **Тест**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import ParentComponent from '@/components/ParentComponent'
 import ChildComponent from '@/components/ChildComponent'
 
@@ -125,7 +125,7 @@ it('manipulates state', async () => {
 Вы можете передать входные параметры в компонент с использованием встроенной во Vue опции `propsData`:
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 mount(Component, {
   propsData: {
@@ -145,7 +145,7 @@ _Полный список опции можно посмотреть в [сек
 Если вы пишете тесты для компонентов определённого приложения, вы можете настроить одни и те же глобальные плагины и примеси один раз перед началом ваших тестов. Но в некоторых случаях, например при тестировании набора общих компонентов, которые могут использоваться в разных приложениях, гораздо лучше протестировать ваши компоненты в более изолированной конфигурации, без загрязнения глобального конструктора `Vue`. Мы можем использовать метод [`createLocalVue`](../api/createLocalVue.md) для достижения этого:
 
 ```js
-import { createLocalVue } from '@vue/test-utils'
+import { createLocalVue } from 'vue2-test-utils'
 
 // создаём расширенный конструктор `Vue`
 const localVue = createLocalVue()
@@ -166,7 +166,7 @@ mount(Component, {
 Другая стратегия для инъекции входных параметров — просто создание их моков. Вы можете это сделать с помощью опции `mocks`:
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 const $route = {
   path: '/',
@@ -189,7 +189,7 @@ mount(Component, {
 Вы можете переопределить компоненты, зарегистрированные глобально или локально, используя опцию `stubs`:
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 mount(Component, {
   // Компонент globally-registered-component

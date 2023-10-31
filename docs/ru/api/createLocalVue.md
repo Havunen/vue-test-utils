@@ -20,7 +20,7 @@
 **Без опций:**
 
 ```js
-import { createLocalVue, shallowMount } from '@vue/test-utils'
+import { createLocalVue, shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const localVue = createLocalVue()
@@ -37,7 +37,7 @@ expect(freshWrapper.vm.foo).toBe(false)
 **С опцией [errorHandler](https://ru.vuejs.org/v2/api/index.html#errorHandler):**
 
 ```js
-import { createLocalVue, shallowMount } from '@vue/test-utils'
+import { createLocalVue, shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const errorHandler = (err, vm, info) => {

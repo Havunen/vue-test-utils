@@ -4,7 +4,7 @@ Fonctionne comme [findComponent](./findComponent.md) mais génère une erreur si
 le sélecteur donné n'est trouvé. Vous devriez utiliser `findComponent` lorsque vous recherchez un élément qui peut ne pas exister. Vous devriez utiliser cette méthode lorsque vous obtenez un élément qui devrait exister et il fournira un message d'erreur sympa si ce n'est pas le cas.
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 

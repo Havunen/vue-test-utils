@@ -42,7 +42,7 @@ export default {
 テストはこのように書くことができます。
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo'
 jest.mock('axios')
 
@@ -73,7 +73,7 @@ it('fetches async when a button is clicked', done => {
 反映されたテストはこのようになります。
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import flushPromises from 'flush-promises'
 import Foo from './Foo'
 jest.mock('axios')

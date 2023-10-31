@@ -15,7 +15,7 @@ setData работает путём слияния существующих св
 - **Пример:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 test('setData demo', async () => {

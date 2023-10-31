@@ -19,7 +19,7 @@ Algumas vezes, a montagem de um componente inteiro com todas suas dependências 
 A Vue Test Utils permite você montar um componente sem a renderizar seus componentes filhos (ao forjar eles) com o método [`shallowMount`](../api/#shallowmount).
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Component from '../Component.vue'
 
 const wrapper = shallowMount(Component)
@@ -135,7 +135,7 @@ Você pode emitir um evento personalizado a partir de um componente filho ao ace
 **Teste**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import ParentComponent from '@/components/ParentComponent'
 import ChildComponent from '@/components/ChildComponent'
 
@@ -165,7 +165,7 @@ it('manipulates state', async () => {
 Você pode passar as propriedades para o componente usando opção `propsData` embutida da Vue:
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 mount(Component, {
   propsData: {
@@ -283,7 +283,7 @@ Alguns componentes podem depender de funcionalidades injetadas por um plugin glo
 Se você estiver escrevendo testes para componentes em uma aplicação especifica, você pode configurar os mesmos plugins globais e mixins de uma vez na entrada de seus testes. Mas em alguns casos, por exemplo testando um conjunto de componente genérico que podem ser partilhados entre aplicações diferentes, é melhor testar seus componentes em uma configuração mais isolada, sem poluir o construtor global da `Vue`. Nós podemos usar o método [`createLocalVue`](../api/createLocalVue.md) para alcançar isso:
 
 ```js
-import { createLocalVue, mount } from '@vue/test-utils'
+import { createLocalVue, mount } from 'vue2-test-utils'
 
 // cria construtor de `Vue` estendido
 const localVue = createLocalVue()
@@ -304,7 +304,7 @@ mount(Component, {
 Uma outra estratégia para propriedades injetadas é simplesmente imitá-las. Você fazer isso com a opção `mocks`:
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 const $route = {
   path: '/',
@@ -327,7 +327,7 @@ mount(Component, {
 Você pode sobrescrever componentes que são registados globalmente ou localmente usando a opção `stubs`:
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 mount(Component, {
   // Resolverá o `globally-registered-component` com o

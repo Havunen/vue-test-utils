@@ -46,7 +46,7 @@ Ao invés de passar a memória para o construtor base da Vue, nós podemos passa
 Veremos que isto se parece:
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import Vuex from 'vuex'
 import Actions from '../../../src/components/Actions'
 
@@ -132,7 +132,7 @@ Este é um componente razoavelmente simples. Ele renderiza o resultado dos gette
 Vejamos o teste:
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import Vuex from 'vuex'
 import Getters from '../../../src/components/Getters'
 
@@ -205,7 +205,7 @@ Componente simples que inclui uma ação e o getter.
 E o teste:
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import Vuex from 'vuex'
 import MyComponent from '../../../src/components/MyComponent'
 import myModule from '../../../src/store/myModule'
@@ -351,7 +351,7 @@ export default {
 ```js
 // store-config.spec.js
 
-import { createLocalVue } from '@vue/test-utils'
+import { createLocalVue } from 'vue2-test-utils'
 import Vuex from 'vuex'
 import storeConfig from './store-config'
 import { cloneDeep } from 'lodash'

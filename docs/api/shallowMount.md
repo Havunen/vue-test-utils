@@ -28,7 +28,7 @@ Like [`mount`](mount.md), it creates a [`Wrapper`](wrapper/) that contains the m
 **Without options:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -42,7 +42,7 @@ describe('Foo', () => {
 **With Vue options:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -60,7 +60,7 @@ describe('Foo', () => {
 **Attach to DOM:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -79,7 +79,7 @@ describe('Foo', () => {
 **Default and named slots:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 import FooBar from './FooBar.vue'
@@ -101,7 +101,7 @@ describe('Foo', () => {
 **Stubbing global properties:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {

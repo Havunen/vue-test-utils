@@ -86,7 +86,7 @@ export default {
 可以这样编写测试：
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo'
 jest.mock('axios', () => ({
   get: Promise.resolve('value')
@@ -119,7 +119,7 @@ setTimeout 也可以使测试通过的原因是，Promise 回调的微任务队�
 修改以后的测试代码：
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import flushPromises from 'flush-promises'
 import Foo from './Foo'
 jest.mock('axios')

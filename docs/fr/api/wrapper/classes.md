@@ -13,7 +13,7 @@ Retourne un tableau de noms de classes ou un booléen si un nom de classe est fo
 - **Exemple:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)

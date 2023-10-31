@@ -11,7 +11,7 @@
 **注意：该包裹器必须包含一个 Vue 示例。**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 test('setProps demo', async () => {
@@ -38,7 +38,7 @@ export default {
 ```
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo, {

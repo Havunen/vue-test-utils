@@ -13,7 +13,7 @@ O método `setProps` deve ser chamado apenas para o componente de alto-nível, m
 :::
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 test('setProps demo', async () => {
@@ -40,7 +40,7 @@ export default {
 ```
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo, {

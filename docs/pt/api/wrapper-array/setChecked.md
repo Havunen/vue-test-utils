@@ -13,7 +13,7 @@ wrapperArray.wrappers.forEach(wrapper => wrapper.setChecked(checked))
 - **Exemplo:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 test('setChecked demo', async () => {
   const wrapper = mount({

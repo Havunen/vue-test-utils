@@ -9,7 +9,7 @@
 - **Примеры:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 test('setChecked demo', async () => {

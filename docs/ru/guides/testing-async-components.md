@@ -42,7 +42,7 @@ export default {
 Тест можно написать следующим образом:
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo'
 jest.mock('axios', () => ({
   get: Promise.resolve({ data: 'value' })
@@ -75,7 +75,7 @@ it('делает асинхронный запрос при нажатии кн�
 Обновлённый тест будет выглядеть так:
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import flushPromises from 'flush-promises'
 import Foo from './Foo'
 jest.mock('axios')

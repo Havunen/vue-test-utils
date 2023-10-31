@@ -12,7 +12,7 @@ Déclenche un [event](../../guides/dom-events.md#trigger-events) sur chaque `Wra
 - **Exemple:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import sinon from 'sinon'
 import Foo from './Foo.vue'
 

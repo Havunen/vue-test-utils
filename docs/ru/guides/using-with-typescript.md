@@ -35,7 +35,7 @@ Jest — это программа для запуска тестов, разр�
 Установить Jest и Vue Test Utils:
 
 ```bash
-$ npm install --save-dev jest @vue/test-utils
+$ npm install --save-dev jest vue2-test-utils
 ```
 
 Затем определите команду `test:unit` в секции scripts в `package.json`.
@@ -135,7 +135,7 @@ Jest рекомендует создать каталог `__tests__` рядом
 
 ```js
 // src/components/__tests__/HelloWorld.spec.ts
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import HelloWorld from '../HelloWorld.vue'
 
 describe('HelloWorld.vue', () => {

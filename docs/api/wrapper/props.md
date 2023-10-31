@@ -13,7 +13,7 @@ Return `Wrapper` `vm` props object. If `key` is provided, the value for the `key
 - **Example:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo, {

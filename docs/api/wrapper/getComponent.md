@@ -6,7 +6,7 @@ that may not exist. You should use this method when getting an element that shou
 exist and it will provide a nice error message if that is not the case.
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 

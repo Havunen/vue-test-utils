@@ -35,7 +35,7 @@ O Jest é um executor de teste desenvolvido pelo Facebook, com o propósito de e
 Instale o Jest e a Vue Test Utils:
 
 ```bash
-$ npm install --save-dev jest @vue/test-utils
+$ npm install --save-dev jest vue2-test-utils
 ```
 
 Depois defina um roteiro `test:unit` dentro de `package.json`.
@@ -135,7 +135,7 @@ Crie um ficheiro `src/components/__tests__/HelloWorld.spec.ts`, e adicione o seg
 
 ```js
 // src/components/__tests__/HelloWorld.spec.ts
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import HelloWorld from '../HelloWorld.vue'
 
 describe('HelloWorld.vue', () => {

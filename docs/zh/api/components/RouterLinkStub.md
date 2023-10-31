@@ -9,7 +9,7 @@
 在挂载选项中将其设置为一个存根：
 
 ```js
-import { mount, RouterLinkStub } from '@vue/test-utils'
+import { mount, RouterLinkStub } from 'vue2-test-utils'
 
 const wrapper = mount(Component, {
   stubs: {

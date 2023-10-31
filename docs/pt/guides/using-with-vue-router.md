@@ -7,7 +7,7 @@ Você nunca deve instalar o Vue Router sobre o construtor base de Vue dentro de 
 Para evitar isso, nós podemos criar um `localVue`, e instalar o Vue Router sobre ele.
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import VueRouter from 'vue-router'
 
 const localVue = createLocalVue()
@@ -31,7 +31,7 @@ Quando nós executamos os testes, nós precisamos tornar estes componentes de Vu
 ### Usando os stubs
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 
 shallowMount(Component, {
   stubs: ['router-link', 'router-view']
@@ -41,7 +41,7 @@ shallowMount(Component, {
 ### Instalando o Vue Router com o `localVue`
 
 ```js
-import { mount, createLocalVue } from '@vue/test-utils'
+import { mount, createLocalVue } from 'vue2-test-utils'
 import VueRouter from 'vue-router'
 
 const localVue = createLocalVue()
@@ -60,7 +60,7 @@ A instância do roteador está disponível para todos componentes filhos, isto �
 Algumas vezes você deseja testar aquele componente que faz alguma coisa com parâmetros dos objetos `$route` e `$router`. Para fazer isso, você pode passar imitações personalizadas para a instância de Vue.
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 
 const $route = {
   path: '/some/path'

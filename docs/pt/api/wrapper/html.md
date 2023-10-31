@@ -8,7 +8,7 @@ Retorna o HTML do nó do DOM do `Wrapper` como uma sequência de caracteres (str
 - **Exemplo:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)

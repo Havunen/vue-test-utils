@@ -7,7 +7,7 @@ Vous ne devez jamais installer Vue Router sur le constructeur de base de Vue lor
 Pour éviter cela, on peut créer un "localVue", et installer Vue Router dessus.
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import VueRouter from 'vue-router'
 
 const localVue = createLocalVue()
@@ -31,7 +31,7 @@ Lorsque nous effectuons des tests, nous devons mettre ces composants de Vue Rout
 ### Utiliser les stubs
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 
 shallowMount(Component, {
   stubs: ['router-link', 'router-view']
@@ -41,7 +41,7 @@ shallowMount(Component, {
 ### Installer Vue Router avec localVue
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import VueRouter from 'vue-router'
 
 const localVue = createLocalVue()
@@ -59,7 +59,7 @@ L'instance du routeur est disponible pour tous les composants enfants, ce qui es
 Parfois, vous voulez tester qu'un composant fait quelque chose avec les paramètres des objets `$route` et `$routeur`. Pour ce faire, vous pouvez passer des simulations personnalisées à l'instance Vue.
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 
 const $route = {
   path: '/some/path'

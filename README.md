@@ -1,4 +1,4 @@
-# Vue Test Utils [![Build Status](https://circleci.com/gh/vuejs/vue-test-utils/tree/dev.png?style=shield)](https://circleci.com/gh/vuejs/vue-test-utils)
+# Vue2 Test Utils [![Build Status](https://circleci.com/gh/vuejs/vue-test-utils/tree/dev.png?style=shield)](https://circleci.com/gh/vuejs/vue-test-utils)
 
 Component testing utils for Vue 2.
 
@@ -12,16 +12,7 @@ This repository provides the following two packages:
 You can install these packages by the following command.
 
 ```
-npm install --save-dev @vue/test-utils@1
-npm install --save-dev @vue/server-test-utils@1
-```
-
-## Peer Dependencies
-
-You need to install `vue-template-compiler` which is used to compile components. It should be the same version as the version of Vue you are using.
-
-```
-npm install --save-dev vue-template-compiler
+npm install --save-dev vue2-test-utils
 ```
 
 ## Documentation

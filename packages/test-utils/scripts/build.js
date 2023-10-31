@@ -1,7 +1,6 @@
 import {rollup} from 'rollup';
 import flow from 'rollup-plugin-flow-no-whitespace';
 import {resolve} from 'path';
-import buble from '@rollup/plugin-buble';
 import {nodeResolve} from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import chalk from 'chalk';
@@ -74,9 +73,6 @@ rollupOptions.forEach(options => {
       }),
       flow(),
       json(),
-      // buble({
-      //   objectAssign: 'Object.assign'
-      // }),
       nodeResolve(),
       commonjs()
     ]

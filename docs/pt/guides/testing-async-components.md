@@ -87,7 +87,7 @@ O componente abaixo faz uma chamada de API quando um botão é clicado, depois a
 Um teste pode ser escrito da seguinte maneira:
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo'
 jest.mock('axios', () => ({
   get: Promise.resolve('value')
@@ -120,7 +120,7 @@ Uma outra solução é usar uma função `async` e um pacote como o [flush-promi
 O teste atualizado parece com isto:
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import flushPromises from 'flush-promises'
 import Foo from './Foo'
 jest.mock('axios')

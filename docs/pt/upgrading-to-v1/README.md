@@ -78,7 +78,7 @@ Se você precisar de mais ajuda para a migração, você pode juntar-se ao [serv
 Os avisos de depreciação podem ser silenciados.
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.showDeprecationWarnings = false
 ```

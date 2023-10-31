@@ -5,7 +5,7 @@ option 要素を選択します。そして、 `v-model` に束縛されてい�
 - **例:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 test('setSelected demo', async () => {

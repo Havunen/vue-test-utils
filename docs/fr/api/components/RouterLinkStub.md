@@ -9,7 +9,7 @@ Vous pouvez utiliser ce composant pour trouver un composant router-link dans l'a
 Pour le définir comme un stub dans les options de montage :
 
 ```js
-import { mount, RouterLinkStub } from '@vue/test-utils'
+import { mount, RouterLinkStub } from 'vue2-test-utils'
 
 const wrapper = mount(Component, {
   stubs: {

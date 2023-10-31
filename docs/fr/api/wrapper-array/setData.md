@@ -11,7 +11,7 @@ Défini les données `Wrapper` `vm` sur chaque `Wrapper` dans `WrapperArray`.
 - **Exemple:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 

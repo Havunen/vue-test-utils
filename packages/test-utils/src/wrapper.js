@@ -115,6 +115,14 @@ export default class Wrapper implements BaseWrapper {
     return key ? attributeMap[key] : attributeMap
   }
 
+  getAttribute(attrName: string) {
+    if (!attrName) {
+      throwError('getAttributes() attrName must be defined! Value was: ' + attrName)
+    }
+
+    return this.element.getAttribute(attrName)
+  }
+
   /**
    * Returns an Array containing all the classes on the element
    */
@@ -564,7 +572,7 @@ export default class Wrapper implements BaseWrapper {
     }
     const tagName = this.element.tagName
     // $FlowIgnore
-    const type = this.attributes().type
+    const type = this.getAttribute('type')
     const event = getCheckedEvent()
 
     if (tagName === 'INPUT' && type === 'checkbox') {
@@ -753,7 +761,7 @@ export default class Wrapper implements BaseWrapper {
   setValue(value: any): Promise<void> {
     const tagName = this.element.tagName
     // $FlowIgnore
-    const type = this.attributes().type
+    const type = this.getAttribute('type')
     this.__warnIfDestroyed()
 
     if (tagName === 'OPTION') {
@@ -856,26 +864,9 @@ export default class Wrapper implements BaseWrapper {
           `https://vue-test-utils.vuejs.org/api/wrapper/trigger.html`
       )
     }
-
-    /**
-     * Avoids firing events on specific disabled elements
-     * See more: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled
-     */
-
-    const supportedTags = [
-      'BUTTON',
-      'COMMAND',
-      'FIELDSET',
-      'KEYGEN',
-      'OPTGROUP',
-      'OPTION',
-      'SELECT',
-      'TEXTAREA',
-      'INPUT'
-    ]
     const tagName = this.element.tagName
 
-    if (this.attributes().disabled && supportedTags.indexOf(tagName) > -1) {
+    if (this.getAttribute('disabled') && supportedTags.has(tagName)) {
       return nextTick()
     }
 
@@ -883,3 +874,20 @@ export default class Wrapper implements BaseWrapper {
     return nextTick()
   }
 }
+
+/**
+ * Avoids firing events on specific disabled elements
+ * See more: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled
+ */
+
+const supportedTags = new Set(
+  'BUTTON',
+  'COMMAND',
+  'FIELDSET',
+  'KEYGEN',
+  'OPTGROUP',
+  'OPTION',
+  'SELECT',
+  'TEXTAREA',
+  'INPUT'
+)

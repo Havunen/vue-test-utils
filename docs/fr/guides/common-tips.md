@@ -19,7 +19,7 @@ Parfois, le montage d'un composant entier avec toutes ses dépendances peut deve
 Vue Test Utils vous permet de monter un composant sans rendre ses composants enfants (en les "stubbing") avec la méthode [`shallowMount`](../api/#shallowmount).
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Component from '../Component.vue'
 
 const wrapper = shallowMount(Component)
@@ -135,7 +135,7 @@ Vous pouvez émettre un événement personnalisé à partir d'un composant enfan
 **Test**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import ParentComponent from '@/components/ParentComponent'
 import ChildComponent from '@/components/ChildComponent'
 
@@ -163,7 +163,7 @@ wrapper.setProps({ foo: 'bar' })
 Vous pouvez passer les props au composant en utilisant l'option intégrée `propsData` de Vue :
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 mount(Component, {
   propsData: {
@@ -281,7 +281,7 @@ Certains des composants peuvent reposer sur des fonctionnalités injectées par 
 Si vous écrivez des tests pour des composants dans une application spécifique, vous pouvez configurer les mêmes plugins et mixins globaux une fois dans l'entrée de vos tests. Mais dans certains cas, par exemple pour tester une suite de composants génériques qui peuvent être partagés entre différentes applications, il est préférable de tester vos composants dans une configuration plus isolée, sans polluer le constructeur global "Vue". Nous pouvons utiliser la méthode [`createLocalVue`](../api/createLocalVue.md) pour y parvenir :
 
 ```js
-import { createLocalVue, mount } from '@vue/test-utils'
+import { createLocalVue, mount } from 'vue2-test-utils'
 
 // créer un constructeur de `Vue` étendu
 const localVue = createLocalVue()
@@ -302,7 +302,7 @@ mount(Component, {
 Une autre stratégie pour les props injectés consiste simplement à les simuler. Vous pouvez le faire avec l'option `mocks` :
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 const $route = {
   path: '/',
@@ -325,7 +325,7 @@ mount(Component, {
 Vous pouvez remplacer les composants qui sont enregistrés globalement ou localement en utilisant l'option `stubs` :
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 mount(Component, {
   // Résoudra le problème des composants enregistrés au niveau mondial avec

@@ -46,7 +46,7 @@
 我们来看看它的样子：
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import Vuex from 'vuex'
 import Actions from '../../../src/components/Actions'
 
@@ -133,7 +133,7 @@ describe('Actions.vue', () => {
 让我们看看这个测试：
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import Vuex from 'vuex'
 import Getters from '../../../src/components/Getters'
 
@@ -206,7 +206,7 @@ describe('Getters.vue', () => {
 其测试：
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import Vuex from 'vuex'
 import MyComponent from '../../../src/components/MyComponent'
 import myModule from '../../../src/store/myModule'
@@ -351,7 +351,7 @@ export default {
 ```js
 // store-config.spec.js
 
-import { createLocalVue } from '@vue/test-utils'
+import { createLocalVue } from 'vue2-test-utils'
 import Vuex from 'vuex'
 import storeConfig from './store-config'
 import { cloneDeep } from 'lodash'

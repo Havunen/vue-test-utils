@@ -15,7 +15,7 @@
 `createWrapper` создает `Wrapper` для смонтированного экземпляра Vue или HTML-элемента.
 
 ```js
-import { createWrapper } from '@vue/test-utils'
+import { createWrapper } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const Constructor = Vue.extend(Foo)

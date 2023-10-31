@@ -35,7 +35,7 @@ Jest is a test runner developed by Facebook, aiming to deliver a battery-include
 Install Jest and Vue Test Utils:
 
 ```bash
-$ npm install --save-dev jest @vue/test-utils
+$ npm install --save-dev jest vue2-test-utils
 ```
 
 Next define a `test:unit` script in `package.json`.
@@ -135,7 +135,7 @@ Create a `src/components/__tests__/HelloWorld.spec.ts` file, and add the followi
 
 ```js
 // src/components/__tests__/HelloWorld.spec.ts
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import HelloWorld from '../HelloWorld.vue'
 
 describe('HelloWorld.vue', () => {

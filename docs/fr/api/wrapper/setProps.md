@@ -13,7 +13,7 @@ Définir les props de `Wrapper` `vm` et forcer à mettre à jour
 :::
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 test('setProps demo', async () => {
@@ -40,7 +40,7 @@ export default {
 ```
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo, {

@@ -11,7 +11,7 @@ Returns `Wrapper` DOM node attribute object. If `key` is provided, the value for
 - **Example:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)

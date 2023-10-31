@@ -11,7 +11,7 @@ Jest — это программа для запуска тестов, разр�
 Первым делом нам необходимо установить Jest и `vue-test-utils`:
 
 ```bash
-$ npm install --save-dev jest @vue/test-utils
+$ npm install --save-dev jest vue2-test-utils
 ```
 
 Затем, необходимо указать псевдоним для запуска тестов в нашем `package.json`.
@@ -160,7 +160,7 @@ Jest может быть использован для генерации отч
 Если вы знакомы с Jasmine, то вы должны чувствовать себя как дома с [проверочным API](https://jestjs.io/docs/en/expect.html#content) Jest:
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Component from './component'
 
 describe('Component', () => {

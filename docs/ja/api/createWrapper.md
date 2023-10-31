@@ -15,7 +15,7 @@
 `createWrapper` は Vue インスタンスまたは HTML 要素に対する `Wrapper` を生成します。
 
 ```js
-import { createWrapper } from '@vue/test-utils'
+import { createWrapper } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const Constructor = Vue.extend(Foo)

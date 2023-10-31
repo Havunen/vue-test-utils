@@ -13,7 +13,7 @@ wrapperArray.wrappers.forEach(wrapper => wrapper.setValue(value))
 - **Exemplo:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 const wrapper = mount({
   data() {

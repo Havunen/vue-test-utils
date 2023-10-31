@@ -9,7 +9,7 @@ Définis la valeur cochée pour l'élément d'entrée de type case à cocher ou 
 - **Exemple:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)

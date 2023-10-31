@@ -7,7 +7,7 @@ O uso do método `get` para pesquisar por um componente está depreciado e será
 Funciona de forma similar ao [`find`](./find.md) mas com a diferença de que lançará um erro se não encontrar nada que corresponda ao seletor dado. Você deve usar o `find` quando estiver procurando por um elemento que talvez não exista. Você deve usar o método `get` quando estiver buscando um elemento que deve existir e ele fornecerá um mensagem de erro agradável se não for o caso.
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 const wrapper = mount(Foo)
 

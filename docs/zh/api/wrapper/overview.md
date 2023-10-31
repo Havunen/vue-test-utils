@@ -9,7 +9,7 @@
 - **示例：**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Component from './Component.vue'
 
 const wrapper = mount(Component)

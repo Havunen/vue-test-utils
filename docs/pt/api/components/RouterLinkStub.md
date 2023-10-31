@@ -9,7 +9,7 @@ Você pode usar este componente para achar um componente `router-link` dentro da
 Definir ele como um componente forjado dentro das opções de montagem:
 
 ```js
-import { mount, RouterLinkStub } from '@vue/test-utils'
+import { mount, RouterLinkStub } from 'vue2-test-utils'
 
 const wrapper = mount(Component, {
   stubs: {

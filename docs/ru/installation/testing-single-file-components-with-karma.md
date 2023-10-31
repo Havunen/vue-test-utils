@@ -11,7 +11,7 @@ Karma — это программа для запуска тестов, кото
 Первым делом нам необходимо установить тестовые зависимости:
 
 ```bash
-npm install --save-dev @vue/test-utils karma karma-chrome-launcher karma-mocha karma-sourcemap-loader karma-spec-reporter karma-webpack mocha
+npm install --save-dev vue2-test-utils karma karma-chrome-launcher karma-mocha karma-sourcemap-loader karma-spec-reporter karma-webpack mocha
 ```
 
 Далее нам нужно определить скрипт для запуска тестов в `package.json`.
@@ -104,7 +104,7 @@ npm install --save-dev karma-chai
 
 ```js
 import { expect } from 'chai'
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Counter from '../src/Counter.vue'
 
 describe('Counter.vue', () => {

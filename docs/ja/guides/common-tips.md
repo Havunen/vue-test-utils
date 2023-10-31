@@ -21,7 +21,7 @@ UI コンポーネントでは、コンポーネントの内部実装の詳細�
 `vue-test-utils` を使うと、`shallowMount` メソッドを使って子コンポーネントを（スタブによって）描画せずにコンポーネントをマウントすることができます：
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 
 const wrapper = shallowMount(Component) // Component インスタンスを含む Wrapper を返します。
 wrapper.vm // マウントされた Vue インスタンス
@@ -75,7 +75,7 @@ it('manipulates state', async () => {
 Vue に組み込まれた `propsData` オプションを使用してコンポーネントにプロパティを渡すことができます:
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 mount(Component, {
   propsData: {
@@ -95,7 +95,7 @@ _オプションの完全なリストについては、ドキュメントの[マ
 特定のアプリケーションでコンポーネントのテストを作成している場合は、同じグローバルプラグインとミックスインをテストのエントリに設定できます。しかし、異なるアプリケーション間で共有される可能性のあるジェネリックコンポーネントスイートをテストする場合など、グローバルな `Vue` コンストラクタを汚染することなく、より孤立した設定でコンポーネントをテストする方が良い場合もあります。[createLocalVue](../api/createLocalVue.md) メソッドを使用すると、次のことができます:
 
 ```js
-import { createLocalVue } from '@vue/test-utils'
+import { createLocalVue } from 'vue2-test-utils'
 
 // 拡張された Vue コンストラクタを作成する
 const localVue = createLocalVue()
@@ -117,7 +117,7 @@ mount(Component, {
 単純なモックを注入するための別の戦略として `mocks` オプションで行うことができます:
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 const $route = {
   path: '/',
@@ -138,7 +138,7 @@ mount(Component, {
 `stubs` オプションを使用して、グローバルまたはローカルに登録されたコンポーネントを上書きできます:
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 mount(Component, {
   // globally-registered-component を空のスタブとして

@@ -28,7 +28,7 @@
 **无选项：**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -42,7 +42,7 @@ describe('Foo', () => {
 **使用 Vue 选项：**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -60,7 +60,7 @@ describe('Foo', () => {
 **固定在 DOM 上：**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -79,7 +79,7 @@ describe('Foo', () => {
 **默认插槽和具名插槽：**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 import FooBar from './FooBar.vue'
@@ -101,7 +101,7 @@ describe('Foo', () => {
 **将全局属性存根：**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {

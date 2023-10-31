@@ -18,7 +18,7 @@ Cria um [`Wrapper` (envolvedor)](wrapper/) que contém o componente Vue montado 
 **Sem as opções:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -32,7 +32,7 @@ describe('Foo', () => {
 **Com as opções do Vue:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -50,7 +50,7 @@ describe('Foo', () => {
 **Ligar ao DOM:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -69,7 +69,7 @@ describe('Foo', () => {
 **Encaixes padrão e nomeados:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 import FooBar from './FooBar.vue'
@@ -91,7 +91,7 @@ describe('Foo', () => {
 **Forjando propriedades globais:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -110,7 +110,7 @@ describe('Foo', () => {
 **Forjando componentes:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 import Faz from './Faz.vue'

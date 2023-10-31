@@ -68,7 +68,7 @@ Vue Test Utils 通过将它们隔离挂载，然后模拟必要的输入 (prop�
 
 // 从测试实用工具集中导入 `mount()` 方法
 // 同时导入你要测试的组件
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Counter from './counter'
 
 // 现在挂载组件，你便得到了这个包裹器
@@ -87,7 +87,7 @@ console.log(wrapper)
 现在我们已经有了这个包裹器，我们能做的第一件事就是认证该组件渲染出来的 HTML 符合预期。
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Counter from './counter'
 
 describe('Counter', () => {

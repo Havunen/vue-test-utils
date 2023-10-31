@@ -5,7 +5,7 @@ Destroys a Vue component instance.
 - **Example:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import sinon from 'sinon'
 
 const spy = sinon.stub()

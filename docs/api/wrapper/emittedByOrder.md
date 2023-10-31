@@ -13,7 +13,7 @@ Return an Array containing custom events emitted by the `Wrapper` `vm`.
 - **Example:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 const wrapper = mount(Component)
 

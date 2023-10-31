@@ -13,7 +13,7 @@
 最初に行うことは、テストの依存関係をインストールすることです:
 
 ```bash
-npm install --save-dev @vue/test-utils mocha mocha-webpack
+npm install --save-dev vue2-test-utils mocha mocha-webpack
 ```
 
 次に、`package.json` にスクリプトを定義する必要があります。
@@ -150,7 +150,7 @@ JavaScript を処理するには `babel-loader` を使用しています。`.bab
 次のコードを使って `test/Counter.spec.js` という名前のテストファイルを作成します。
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Counter from '../src/Counter.vue'
 
 describe('Counter.vue', () => {

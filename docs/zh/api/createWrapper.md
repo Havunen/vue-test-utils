@@ -15,7 +15,7 @@
 `createWrapper` 为一个被挂载的 Vue 实例或一个 HTML 元素创建一个 `Wrapper`。
 
 ```js
-import { createWrapper } from '@vue/test-utils'
+import { createWrapper } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const Constructor = Vue.extend(Foo)

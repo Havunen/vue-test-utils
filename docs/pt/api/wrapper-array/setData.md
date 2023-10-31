@@ -11,7 +11,7 @@ Define os dados do `vm` do `Wrapper` (envolvedor) em cada `Wrapper` (envolvedor)
 - **Exemplo:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 

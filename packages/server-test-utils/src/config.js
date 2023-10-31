@@ -1,3 +1,3 @@
-import * as testUtils from '@vue/test-utils'
+import * as testUtils from 'vue2-test-utils'
 
 export default testUtils.config

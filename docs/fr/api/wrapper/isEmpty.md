@@ -15,7 +15,7 @@ Affirmer que `Wrapper` ne contient pas de nœud enfant.
 - **Exemple:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)

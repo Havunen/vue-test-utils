@@ -15,7 +15,7 @@ A new `WrapperArray` instance containing `Wrapper` instances that returns true f
 - **Example:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = shallowMount(Foo)

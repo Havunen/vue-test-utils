@@ -9,7 +9,7 @@ text コントロールの input 要素の 値をセットします。そして�
 - **例:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 test('setValue demo', async () => {

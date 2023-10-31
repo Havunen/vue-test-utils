@@ -16,7 +16,7 @@ vue-test-utils にはオプションを定義するための `config` オプシ�
 例:
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.stubs['my-component'] = '<div />'
 ```
@@ -31,7 +31,7 @@ config.stubs['my-component'] = '<div />'
 例:
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.mocks['$store'] = {
   state: {
@@ -50,7 +50,7 @@ config.mocks['$store'] = {
 例:
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.methods['getData'] = () => {}
 ```
@@ -65,7 +65,7 @@ config.methods['getData'] = () => {}
 例:
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.provide['$logger'] = {
   log: (...args) => {

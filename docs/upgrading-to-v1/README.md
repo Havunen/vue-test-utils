@@ -78,7 +78,7 @@ If you need more help migrating, you can join the [VueLand server](https://chat.
 Deprecation warnings can be silenced.
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.showDeprecationWarnings = false
 ```

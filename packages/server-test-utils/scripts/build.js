@@ -1,7 +1,6 @@
 import {rollup} from 'rollup';
 import flow from 'rollup-plugin-flow-no-whitespace';
 import {resolve} from 'path';
-import buble from '@rollup/plugin-buble';
 import {nodeResolve} from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import chalk from 'chalk';
@@ -41,14 +40,11 @@ rollupOptions.forEach(options => {
       'vue-template-compiler',
       'vue-server-renderer',
       'cheerio',
-      '@vue/test-utils'
+      'vue2-test-utils'
     ],
     plugins: [
       flow(),
       json(),
-      // buble({
-      //   objectAssign: 'Object.assign'
-      // }),
       nodeResolve(),
       commonjs()
     ]

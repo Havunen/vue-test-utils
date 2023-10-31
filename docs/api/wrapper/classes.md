@@ -13,7 +13,7 @@ Returns an Array of class names or a boolean if a class name is provided.
 - **Example:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)

@@ -35,7 +35,7 @@ Jest はバッテリー付属のユニットテストソリューションを提
 Jest と Vue Test Utils をインストールします。
 
 ```bash
-$ npm install --save-dev jest @vue/test-utils
+$ npm install --save-dev jest vue2-test-utils
 ```
 
 次に `test:unit` スクリプトを `package.json` に定義します。
@@ -135,7 +135,7 @@ Jest はテストされるコードと同じディレクトリに `__tests__` �
 
 ```js
 // src/components/__tests__/HelloWorld.spec.ts
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import HelloWorld from '../HelloWorld.vue'
 
 describe('HelloWorld.vue', () => {

@@ -9,7 +9,7 @@ Définis la valeur d'une entrée de contrôle de texte ou d'un élément de sél
 - **Exemple:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)

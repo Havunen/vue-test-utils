@@ -28,7 +28,7 @@ Tal como o [`mount`](mount.md), ele cria um [`Wrapper` (envolvedor)](wrapper/) q
 **Sem as opções:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -42,7 +42,7 @@ describe('Foo', () => {
 **Com as opções do Vue:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -60,7 +60,7 @@ describe('Foo', () => {
 **Ligar ao DOM:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -79,7 +79,7 @@ describe('Foo', () => {
 **Encaixes padrão e nomeados:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 import FooBar from './FooBar.vue'
@@ -101,7 +101,7 @@ describe('Foo', () => {
 **Forjando propriedades globais:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {

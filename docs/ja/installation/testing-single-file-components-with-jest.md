@@ -11,7 +11,7 @@ Jest は Facebook が開発したテストランナであり、ユニットテ�
 まず Jest と `vue-test-utils` をインストールします:
 
 ```bash
-$ npm install --save-dev jest @vue/test-utils
+$ npm install --save-dev jest vue2-test-utils
 ```
 
 次に、`package.json` にスクリプトを定義する必要があります。
@@ -158,7 +158,7 @@ Jest は複数のフォーマットでカバレッジを取ることができま
 あなたが Jasmine をよく知っているなら、Jest の [assertion API](https://jestjs.io/docs/en/expect.html#content)は自宅のように感じるはずです。
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Component from './component'
 
 describe('Component', () => {

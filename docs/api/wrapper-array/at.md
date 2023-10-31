@@ -12,7 +12,7 @@ If `index` is negative, indexing starts from the last element (i.e. last item is
 - **Example:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = shallowMount(Foo)

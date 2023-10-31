@@ -68,7 +68,7 @@ wrapper.trigger('click', { button: 0 })
 
 ```js
 import YesNoComponent from '@/components/YesNoComponent'
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import sinon from 'sinon'
 
 describe('Click event', () => {
@@ -148,7 +148,7 @@ describe('Click event', () => {
 
 ```js
 import QuantityComponent from '@/components/QuantityComponent'
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 describe('Тестирование событий клавиш', () => {
   it('Quantity по умолчанию равно нулю', () => {

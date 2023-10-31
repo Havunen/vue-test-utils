@@ -19,7 +19,7 @@ Jest 是一个由 Facebook 开发的测试运行器，致力于提供一个“be
 我们要做的第一件事就是安装 Jest 和 Vue Test Utils：
 
 ```bash
-$ npm install --save-dev jest @vue/test-utils
+$ npm install --save-dev jest vue2-test-utils
 ```
 
 然后我们需要在 `package.json` 中定义一个单元测试的脚本。
@@ -168,7 +168,7 @@ Jest 可以被用来生成多种格式的测试覆盖率报告。以下是一个
 如果你已经熟悉了 Jasmine，你应该很适应 Jest 的[断言 API](https://jestjs.io/docs/zh-Hans/expect)：
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Component from './component'
 
 describe('Component', () => {

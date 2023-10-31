@@ -14,7 +14,7 @@ Retorna um objeto contento eventos personalizados emitidos pelo `Wrapper` (envol
 - **Exemplo:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 const wrapper = mount(Component)
 

@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.3.9
+
+Optimized reading attributes and disable check
+
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
@@ -17,7 +21,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.0.5](https://github.com/vuejs/vue-test-utils/compare/v1.0.4...v1.0.5) (2020-08-29)
 
-**Note:** Version bump only for package @vue/test-utils
+**Note:** Version bump only for package vue2-test-utils
 
 
 
@@ -37,7 +41,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.0.2](https://github.com/vuejs/vue-test-utils/compare/v1.0.1...v1.0.2) (2020-05-06)
 
-**Note:** Version bump only for package @vue/test-utils
+**Note:** Version bump only for package vue2-test-utils
 
 
 
@@ -238,7 +242,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.0.0-beta.23](https://github.com/vuejs/vue-test-utils/compare/v1.0.0-beta.22...v1.0.0-beta.23) (2018-07-31)
 
-**Note:** Version bump only for package @vue/test-utils
+**Note:** Version bump only for package vue2-test-utils
 
 <a name="1.0.0-beta.22"></a>
 

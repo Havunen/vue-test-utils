@@ -46,7 +46,7 @@ Instead of passing the store to the base Vue constructor, we can pass it to a - 
 Let’s see what this looks like:
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import Vuex from 'vuex'
 import Actions from '../../../src/components/Actions'
 
@@ -132,7 +132,7 @@ This is a fairly simple component. It renders the result of the getters `clicks`
 Let’s see the test:
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import Vuex from 'vuex'
 import Getters from '../../../src/components/Getters'
 
@@ -205,7 +205,7 @@ Simple component that includes one action and one getter.
 And the test:
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import Vuex from 'vuex'
 import MyComponent from '../../../src/components/MyComponent'
 import myModule from '../../../src/store/myModule'
@@ -351,7 +351,7 @@ export default {
 ```js
 // store-config.spec.js
 
-import { createLocalVue } from '@vue/test-utils'
+import { createLocalVue } from 'vue2-test-utils'
 import Vuex from 'vuex'
 import storeConfig from './store-config'
 import { cloneDeep } from 'lodash'

@@ -15,7 +15,7 @@ Affirmer que chaque `Wrapper` dans `WrapperArray` ne contient pas de nœud enfan
 - **Exemple:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)

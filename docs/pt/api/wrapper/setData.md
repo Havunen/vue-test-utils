@@ -13,7 +13,7 @@ O `setData` funciona através da chamada recursiva do `Vue.set`.
 - **Exemplo:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 test('setData demo', async () => {

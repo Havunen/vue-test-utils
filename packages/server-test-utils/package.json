@@ -29,7 +29,7 @@
     "cheerio": "^1.0.0-rc.12"
   },
   "peerDependencies": {
-    "@vue/test-utils": "*",
+    "vue2-test-utils": "*",
     "vue": "2.x",
     "vue-server-renderer": "2.x",
     "vue-template-compiler": "^2.x"

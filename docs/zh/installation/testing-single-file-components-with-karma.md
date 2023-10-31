@@ -11,7 +11,7 @@ Karma 是一个启动浏览器运行测试并生成报告的测试运行器。�
 第一件要做的事是安装测试依赖：
 
 ```bash
-npm install --save-dev @vue/test-utils karma karma-chrome-launcher karma-mocha karma-sourcemap-loader karma-spec-reporter karma-webpack mocha
+npm install --save-dev vue2-test-utils karma karma-chrome-launcher karma-mocha karma-sourcemap-loader karma-spec-reporter karma-webpack mocha
 ```
 
 接下来我们需要在 `package.json` 定义一个测试脚本。
@@ -104,7 +104,7 @@ npm install --save-dev karma-chai
 
 ```js
 import { expect } from 'chai'
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Counter from '../src/Counter.vue'
 
 describe('Counter.vue', () => {

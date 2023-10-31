@@ -6,7 +6,7 @@ Seleciona um elemento de opção e atualiza o dado ligado ao `v-model`.
 - **Exemplo:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 test('setSelected demo', async () => {

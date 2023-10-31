@@ -9,7 +9,7 @@ Sets checked value for input element of type checkbox or radio and updates `v-mo
 - **Example:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 test('setChecked demo', async () => {

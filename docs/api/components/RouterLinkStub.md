@@ -9,7 +9,7 @@ You can use this component to find a router-link component in the render tree.
 To set it as a stub in mounting options:
 
 ```js
-import { mount, RouterLinkStub } from '@vue/test-utils'
+import { mount, RouterLinkStub } from 'vue2-test-utils'
 
 const wrapper = mount(Component, {
   stubs: {

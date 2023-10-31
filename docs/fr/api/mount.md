@@ -18,7 +18,7 @@ Crée un [`Wrapper`](wrapper/) qui contient le composant Vue monté et rendu.
 **Sans les options:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -32,7 +32,7 @@ describe('Foo', () => {
 **Avec les options Vue:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -50,7 +50,7 @@ describe('Foo', () => {
 **Attacher au DOM:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -69,7 +69,7 @@ describe('Foo', () => {
 **Les slots par défauts et nommés :**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 import FooBar from './FooBar.vue'
@@ -91,7 +91,7 @@ describe('Foo', () => {
 **Les propriétés globales des Stubbing :**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -110,7 +110,7 @@ describe('Foo', () => {
 **Les composants Stubbing**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 import Faz from './Faz.vue'

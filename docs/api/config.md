@@ -14,7 +14,7 @@ Control whether or not to show deprecation warnings. When set to `true`, all dep
 Example:
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.showDeprecationWarnings = false
 ```
@@ -32,7 +32,7 @@ This could be useful to log deprecation messages to separate location or to help
 Example:
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.showDeprecationWarnings = true
 config.deprecationWarningHandler = (method, message) => {
@@ -55,7 +55,7 @@ When passing `stubs` as an array in the mounting options, `config.stubs` are con
 Example:
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.stubs['my-component'] = '<div />'
 ```
@@ -70,7 +70,7 @@ Like `stubs`, the values passed to `config.mocks` are used by default. Any value
 Example:
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.mocks['$store'] = {
   state: {
@@ -89,7 +89,7 @@ You can configure default methods using the `config` object. This can be useful 
 Example:
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.methods['getData'] = () => {}
 ```
@@ -104,7 +104,7 @@ Like `stubs` or `mocks`, the values passed to `config.provide` are used by defau
 Example:
 
 ```js
-import { config } from '@vue/test-utils'
+import { config } from 'vue2-test-utils'
 
 config.provide['$logger'] = {
   log: (...args) => {

@@ -76,7 +76,7 @@ test('triggers a click', async () => {
 
 ```js
 import YesNoComponent from '@/components/YesNoComponent'
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import sinon from 'sinon'
 
 describe('Click event', () => {
@@ -156,7 +156,7 @@ Ce composant permet d'incrémenter/décrémenter la quantité à l'aide de diff�
 
 ```js
 import QuantityComponent from '@/components/QuantityComponent'
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 describe('Key event tests', () => {
   it('Quantity is zero by default', () => {

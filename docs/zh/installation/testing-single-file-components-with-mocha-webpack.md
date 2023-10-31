@@ -13,7 +13,7 @@
 首先要做的是安装测试依赖：
 
 ```bash
-npm install --save-dev @vue/test-utils mocha mochapack
+npm install --save-dev vue2-test-utils mocha mochapack
 ```
 
 接下来我们需要在 `package.json` 中定义一个测试脚本。
@@ -151,7 +151,7 @@ global.expect = require('expect')
 
 ```js
 import Vue from 'vue'
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Counter from '../src/Counter.vue'
 
 describe('Counter.vue', () => {

@@ -7,7 +7,7 @@ You should never install Vue Router on the Vue base constructor in tests. Instal
 To avoid this, we can create a localVue, and install Vue Router on that.
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import VueRouter from 'vue-router'
 
 const localVue = createLocalVue()
@@ -31,7 +31,7 @@ When we run tests, we need to make these Vue Router components available to the 
 ### Using stubs
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 
 shallowMount(Component, {
   stubs: ['router-link', 'router-view']
@@ -41,7 +41,7 @@ shallowMount(Component, {
 ### Installing Vue Router with localVue
 
 ```js
-import { mount, createLocalVue } from '@vue/test-utils'
+import { mount, createLocalVue } from 'vue2-test-utils'
 import VueRouter from 'vue-router'
 
 const localVue = createLocalVue()
@@ -60,7 +60,7 @@ The router instance is available to all children components, this is useful for 
 Sometimes you want to test that a component does something with parameters from the `$route` and `$router` objects. To do that, you can pass custom mocks to the Vue instance.
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 
 const $route = {
   path: '/some/path'

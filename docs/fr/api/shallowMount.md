@@ -28,7 +28,7 @@ Comme [`mount`](mount.md), il crée un [`Wrapper`](wrapper/) qui contient le com
 **Sans les options:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -42,7 +42,7 @@ describe('Foo', () => {
 **Avec les options de Vue:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -60,7 +60,7 @@ describe('Foo', () => {
 **Rattacher au DOM:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -79,7 +79,7 @@ describe('Foo', () => {
 **Slots par défaut et nommés:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 import FooBar from './FooBar.vue'
@@ -101,7 +101,7 @@ describe('Foo', () => {
 **Les propriétés globales des Stubbing :**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {

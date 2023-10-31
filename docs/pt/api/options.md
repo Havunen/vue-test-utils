@@ -273,7 +273,7 @@ Uma cópia local de Vue criada pelo método [`createLocalVue`](./createLocalVue.
 Exemplo:
 
 ```js
-import { createLocalVue, mount } from '@vue/test-utils'
+import { createLocalVue, mount } from 'vue2-test-utils'
 import VueRouter from 'vue-router'
 import Foo from './Foo.vue'
 

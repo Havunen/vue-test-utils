@@ -21,7 +21,7 @@ Sets `Wrapper` `vm` methods and forces update.
 - **Example:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import sinon from 'sinon'
 import Foo from './Foo.vue'
 

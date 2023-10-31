@@ -7,7 +7,7 @@
 これを回避するために、localeVue を作成し、その上に Vue Router をインストールすることができます。
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import VueRouter from 'vue-router'
 
 const localVue = createLocalVue()
@@ -31,7 +31,7 @@ Vue Router をインストールする時、`router-link` と `router-view` コ�
 ### スタブを使用する
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 
 shallowMount(Component, {
   stubs: ['router-link', 'router-view']
@@ -41,7 +41,7 @@ shallowMount(Component, {
 ### localVue による Vue Router のインストール
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from 'vue2-test-utils'
 import VueRouter from 'vue-router'
 
 const localVue = createLocalVue()
@@ -57,7 +57,7 @@ shallowMount(Component, {
 時々、コンポーネントが `$route` と `$router` オブジェクトから引数によって何かをするテストをしたいときがあります。これをするためには、Vue インスタンスにカスタムモックを渡すことができます。
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 
 const $route = {
   path: '/some/path'

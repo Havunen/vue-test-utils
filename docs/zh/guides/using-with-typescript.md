@@ -35,7 +35,7 @@ Jest 是一个由 Facebook 研发的测试运行器，它致力于提供一个�
 安装 Jest 和 Vue Test Utils：
 
 ```bash
-$ npm install --save-dev jest @vue/test-utils
+$ npm install --save-dev jest vue2-test-utils
 ```
 
 接下来在 `package.json` 里定义一个 `test:unit` 脚本。
@@ -135,7 +135,7 @@ Jest 推荐我们在被测试的代码旁边创建一个 `__tests__` 目录，�
 
 ```js
 // src/components/__tests__/HelloWorld.spec.ts
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import HelloWorld from '../HelloWorld.vue'
 
 describe('HelloWorld.vue', () => {

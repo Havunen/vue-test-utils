@@ -11,7 +11,7 @@ Define as propriedades do `vm` do `Wrapper` (envolvedor) e força a atualizaçã
 - **Exemplo:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 

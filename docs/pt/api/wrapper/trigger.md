@@ -14,7 +14,7 @@ O méotodo `trigger` apenas funciona com eventos nativos do DOM. Para emitir um 
 - **Exemplo:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 import sinon from 'sinon'
 import Foo from './Foo'
 

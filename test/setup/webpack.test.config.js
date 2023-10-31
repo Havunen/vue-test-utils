@@ -34,7 +34,7 @@ const rules = [].concat(
 const externals = nodeExternals({
   // we need to allowlist both `create-instance` and files in `shared` package. Otherwise webpack won't bundle them in the test dev env
   allowlist: [
-    '@vue/test-utils',
+    'vue2-test-utils',
     '@vue/server-test-utils',
     'create-instance',
     /^shared\/.*/
@@ -46,7 +46,7 @@ if (process.env.TARGET === 'browser') {
   // if we are in dev test mode, we want to alias all files to the src file, not dist
   aliasedFiles = {
     '@vue/server-test-utils': `@vue/server-test-utils/src/index.js`,
-    '@vue/test-utils': `@vue/test-utils/src/index.js`
+    'vue2-test-utils': `vue2-test-utils/src/index.js`
   }
 }
 

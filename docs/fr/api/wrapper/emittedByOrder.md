@@ -13,7 +13,7 @@ Retourne un tableau contenant des événements personnalisés émis par le `Wrap
 - **Exemple:**
 
 ```js
-import { mount } from '@vue/test-utils'
+import { mount } from 'vue2-test-utils'
 
 const wrapper = mount(Component)
 

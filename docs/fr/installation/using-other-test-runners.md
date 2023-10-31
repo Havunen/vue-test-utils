@@ -35,7 +35,7 @@ Nous avons trouvé [`mochapack`](https://github.com/sysgears/mochapack) qui nous
 La première chose à faire est d'installer des dépendances de test :
 
 ```bash
-npm install --save-dev @vue/test-utils mocha mochapack
+npm install --save-dev vue2-test-utils mocha mochapack
 ```
 
 Après avoir installer Vue Test Utils et `mochapack`, vous devez définir un script de test dans votre `package.json` :

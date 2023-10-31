@@ -17,7 +17,7 @@ Le plugin récupère toutes les dépendances nécessaires (y compris jest), cré
 Après cela, tout ce que vous avez à faire est d'installer Vue Test Utils.
 
 ```bash
-$ npm install --save-dev @vue/test-utils
+$ npm install --save-dev vue2-test-utils
 ```
 
 ### Installation Manuelle
@@ -25,7 +25,7 @@ $ npm install --save-dev @vue/test-utils
 Après avoir configuré Jest, la première chose à faire est d'installer Vue Test Utils et [`vue-jest`](https://github.com/vuejs/vue-jest) pour traiter les mono-fichiers.
 
 ```bash
-$ npm install --save-dev @vue/test-utils vue-jest
+$ npm install --save-dev vue2-test-utils vue-jest
 ```
 
 Ensuite, vous devez dire à Jest de transformer les fichiers `.vue` en utilisant `.vue-jest`. Vous pouvez le faire en ajoutant la configuration suivante dans le `package.json` ou dans un [fichier de configuration de Jest](https://jestjs.io/docs/en/configuration) :

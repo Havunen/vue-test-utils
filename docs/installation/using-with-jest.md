@@ -4,28 +4,12 @@ Jest is a test runner developed by Facebook, aiming to deliver a battery-include
 
 <div class="vueschool"><a href="https://vueschool.io/courses/learn-how-to-test-vuejs-components?friend=vuejs" target="_blank" rel="sponsored noopener" title="Learn how to use Jest and Vue Test Utils to test Single File Components with Vue School">Learn how to use Jest to test Single File Components with Vue School</a></div>
 
-### Installation with Vue CLI (recommended)
-
-If you are using the Vue CLI to build your project, you can use the plugin [cli-plugin-unit-jest](https://cli.vuejs.org/core-plugins/unit-jest.html) to run Jest tests.
-
-```bash
-$ vue add unit-jest
-```
-
-The plugin pulls all required dependencies (including jest), creates a `jest.config.js` file with sensible defaults, and generates a sample test suite.
-
-After that, all you need to do is to install Vue Test Utils.
-
-```bash
-$ npm install --save-dev @vue/test-utils@legacy
-```
-
 ### Manual installation
 
 After setting up Jest, the first thing to do is to install Vue Test Utils and [`vue-jest`](https://github.com/vuejs/vue-jest) to process Single-File Components:
 
 ```bash
-$ npm install --save-dev @vue/test-utils@legacy vue-jest
+$ npm install --save-dev vue2-test-utils vue-jest
 ```
 
 Then, you need to tell Jest to transform `.vue` files using `vue-jest`. You can do so by adding the following configuration in `package.json` or in a standalone [Jest config file](https://jestjs.io/docs/en/configuration):

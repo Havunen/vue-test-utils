@@ -13,7 +13,7 @@ Use any valid [selector](../selectors.md).
 - **Example:**
 
 ```js
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 

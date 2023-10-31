@@ -9,7 +9,7 @@
 O método `enableAutoDestroy` destruirá todas as instâncias de `Wrapper` (envolvedor) usando a função gatilho passada (por exemplo o [`afterEach`](https://jestjs.io/docs/en/api#aftereachfn-timeout)). Depois de chamar o método, você pode reverter para o comportamento padrão ao chamar o método `resetAutoDestroyState`.
 
 ```js
-import { enableAutoDestroy, mount } from '@vue/test-utils'
+import { enableAutoDestroy, mount } from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 // chama wrapper.destroy() depois de cada teste
@@ -37,7 +37,7 @@ import {
   enableAutoDestroy,
   resetAutoDestroyState,
   mount
-} from '@vue/test-utils'
+} from 'vue2-test-utils'
 import Foo from './Foo.vue'
 
 // chama wrapper.destroy() depois de cada teste

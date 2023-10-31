@@ -35,7 +35,7 @@ Jest est un outil de test développer par Facebook, visant à fournir une soluti
 Installez Jest et Vue Test Utils :
 
 ```bash
-$ npm install --save-dev jest @vue/test-utils
+$ npm install --save-dev jest vue2-test-utils
 ```
 
 Définissez ensuite un script `test:unit` dans le fichier `package.json`.
@@ -135,7 +135,7 @@ Créez un fichier `src/components/__tests__/HelloWorld.spec.ts`, et ajoutez le c
 
 ```js
 // src/components/__tests__/HelloWorld.spec.ts
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount } from 'vue2-test-utils'
 import HelloWorld from '../HelloWorld.vue'
 
 describe('HelloWorld.vue', () => {
